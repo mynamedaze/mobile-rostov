@@ -1,0 +1,35 @@
+/* TEAM */                       
+Your title: Murat Kudainetov.                          
+Site: murat.kudainetov@gmail.com                          
+Github: mynamedaze                          
+Location: Russia, Maykop.
+                      
+                 
+                        [...]
+						
+
+							
+/* THANKS */
+
+							
+Name: Alexander Antipin
+
+						
+                 
+                        [...]
+                        
+
+                            
+/* SITE */
+
+                            
+Last update: 2017/08/10 
+
+                            
+Standards: HTML5, CSS3, JS
+
+                            
+Components: formValidator, jQuery.
+
+                            
+Software: Adobe Photoshop, Visual Studio Code, Node.js

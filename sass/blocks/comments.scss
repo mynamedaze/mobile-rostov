@@ -1,0 +1,33 @@
+.comments {
+  width: 100%;
+}
+.comments__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  @media #{$max-mobile-width} {
+    max-width: $max-mobile-wrapper;
+  }
+  @media #{$min-tablet-width} {
+    max-width: $max-tablet-wrapper;
+  }
+  @media #{$min-desktop-width} {
+    max-width: $max-desktop-wrapper;
+  }
+}
+.comments__title {
+  text-align: center;
+  font-weight: 500;
+  @media #{$max-mobile-width} {
+    font-size: 2.6rem;
+    margin-top: 20px;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 2.4rem;
+    margin-top: 30px;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 3.2rem;
+    margin-top: 30px;
+  }
+}

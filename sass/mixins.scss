@@ -1,0 +1,32 @@
+@mixin section-width() {
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  @media #{$max-mobile-width} {
+    max-width: $max-mobile-wrapper;
+  }
+  @media #{$min-tablet-width} {
+    max-width: $max-tablet-wrapper;
+  }
+  @media #{$min-desktop-width} {
+    max-width: $max-desktop-wrapper;
+  }
+}
+@mixin paddings() {
+  @media #{$max-mobile-width} {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+  @media #{$min-tablet-width} {
+    padding-left: 31px;
+    padding-right: 31px;
+  }
+  @media #{$min-desktop-width} {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+}
+@mixin centers {
+  margin-left: auto;
+  margin-right: auto;
+}

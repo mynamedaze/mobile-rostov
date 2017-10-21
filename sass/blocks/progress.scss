@@ -1,0 +1,54 @@
+.progress {
+  display: none;
+  @include centers;
+  position: relative;
+  max-width: 378px;
+  height: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ebebeb;
+  background-color: #d8d8d8;
+  border-radius: 5px;
+  margin-top: 19px;
+}
+.progress__bar {
+  transition: width ease 0.5s;
+  width: 0%;
+  height: 100%;
+  border-radius: 4px;
+background: rgb(12,218,237); /* Old browsers */
+background: -moz-linear-gradient(left, rgba(12,218,237,1) 0%, rgba(42,143,181,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(12,218,237,1) 0%,rgba(42,143,181,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(12,218,237,1) 0%,rgba(42,143,181,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0cdaed', endColorstr='#2a8fb5',GradientType=1 ); /* IE6-9 */
+}
+.progress__percent-field {
+  position: absolute;
+  width: 36px;
+  background-color: #636363;
+  text-align: center;
+  top: 19px;
+  left: 0%;
+  transform: translateX(-18px);
+  padding-top: 3px;
+  padding-bottom: 1px;
+  border-radius: 9px;
+}
+.progress__percent-field::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 3px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  background-image: url("/img/progress-detail.jpg");
+  background-color: red;
+  left: 50%;
+  top: -3px;
+  transform: translateX(-5px);
+}
+.progress__percent {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 500;
+}

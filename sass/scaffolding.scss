@@ -1,0 +1,73 @@
+html {
+  font-size: 0.625rem;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+body {
+  font-family: $font-main;
+  margin: 0px;
+  color: $text-main-color;
+  background-color: $main-bg;
+}
+input {
+  font-family: $font-main;
+  box-sizing: border-box;
+  border-width: 0;
+  @media #{$max-mobile-width} {
+    border-radius: 3px;
+  }
+  @media #{$min-tablet-width} {
+    border-radius: 3px;
+  }
+  @media #{$min-desktop-width} {
+    border-radius: 4px;
+  }
+}
+input[type="submit"] {
+  cursor: pointer;
+}
+input[type="submit"]:active {
+}
+input[type="tel"],
+input[type="text"] {
+}
+input:focus {
+  outline-width: 0;
+  border-width: 0;
+  outline: none;
+}
+button {
+  font-family: $font-main;
+  border-width: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+button:focus {
+  outline-width: 0;
+  outline: none;
+  border-width: 0;
+}
+.disable {
+  display: none;
+}
+select {
+  font-family: $font-main;
+}

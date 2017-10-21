@@ -1,0 +1,118 @@
+.page-header {
+  width: 100%;
+}
+.page-header__wrapper {
+  @include section-width;
+  @include paddings;
+  display: flex;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  @media #{$max-mobile-width} {
+    flex-direction: column;
+  }
+  @media #{$min-tablet-width} {
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.page-header__description-field {
+  @media #{$max-mobile-width} {
+    width: 100%;
+    text-align: center;
+  }
+  @media #{$min-tablet-width} {
+    width: 32%;
+  }
+  @media #{$min-desktop-width} {
+    width: 24%;
+  }
+}
+.page-header__description {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.page-header__address-field {
+  @media #{$max-mobile-width} {
+    width: 100%;
+    display: none;
+  }
+  @media #{$min-tablet-width} {
+    @media #{$max-tablet-width} {
+      display: none;
+    }
+  }
+  @media #{$min-desktop-width} {
+    width: 24%;
+  }
+}
+.page-header__address-title {
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+.page-header__address {
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.page-header__phone-field {
+  @media #{$max-mobile-width} {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  @media #{$min-tablet-width} {
+    width: 32%;
+  }
+  @media #{$min-desktop-width} {
+    width: 24%;
+  }
+}
+.page-header__phone-title {
+  font-size: 1.4rem;
+  font-weight: 300;
+  @media #{$max-mobile-width} {
+    display: none;
+  }
+}
+.page-header__phone-link {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #0078cc;
+}
+.page-header__consult-btn-field {
+  @media #{$max-mobile-width} {
+    width: 100%;
+    margin-top: 10px;
+  }
+  @media #{$min-tablet-width} {
+    width: 32%;
+  }
+  @media #{$min-desktop-width} {
+    width: 24%;
+  }
+}
+.page-header__consult-btn {
+  display: block;
+  box-sizing: border-box;
+  max-width: 208px;
+  min-height: 4.2rem;
+  border: 2px solid #0078cc;
+  border-radius: 2px;
+  background-color: #ffffff;
+  color: #0078cc;
+  @include centers;
+}
+.page-header__consult-btn:active {
+  border: 2px solid #0078cc;
+  background-color: #0078cc;
+  color: #ffffff;
+  outline: none;
+}
+.page-header__consult-btn:hover {
+  border: 2px solid #0078cc;
+  background-color: #0078cc;
+  color: #ffffff;
+}
+.page-header__consult-btn:focus {
+  outline: none;
+  border: 2px solid #0078cc;
+}
